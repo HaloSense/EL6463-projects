@@ -1,0 +1,8 @@
+# Ignore everything
+*
+# Unignore anything that is a directory
+!*/
+# File type whitelist
+!*.v
+!*.vhd
+

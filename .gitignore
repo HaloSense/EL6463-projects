@@ -1,0 +1,27 @@
+# Ignore everything
+*
+# Unignore anything that is a directory
+!*/
+
+# File type whitelist
+
+# gitignore itself
+!.gitignore
+
+# Verilog source files
+!*.v
+
+# VHDL source files
+!*.vhd
+
+# Vivado project files
+!*.xpr
+
+# C source files
+!*.c
+
+# Markdown Documents
+!*.md
+
+# Potential test files in plain text
+!*.txt

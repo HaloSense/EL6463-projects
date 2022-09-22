@@ -3,7 +3,8 @@
 # Unignore anything that is a directory
 !*/
 # File type whitelist
-!*.v
-!*.vhd
-!*.xpr
+!*.v    # Verilog source files
+!*.vhd  # VHDL source files
+!*.xpr  # Vivado project files
+!*.c    # C source files
 

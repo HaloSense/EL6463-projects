@@ -5,4 +5,5 @@
 # File type whitelist
 !*.v
 !*.vhd
+!*.xpr
 

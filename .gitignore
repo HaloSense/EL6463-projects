@@ -7,4 +7,6 @@
 !*.vhd  # VHDL source files
 !*.xpr  # Vivado project files
 !*.c    # C source files
+!*.md   # Markdown Documents
+!*.txt  # Potential test files in plain text
 

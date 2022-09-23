@@ -25,3 +25,7 @@
 
 # Potential test files in plain text
 !*.txt
+
+# FPGA Constraints files
+!*.xdc
+

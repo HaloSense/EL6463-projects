@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "syn_count4_behav" "xil_defaultlib.syn_count4" -log "elaborate.log" 

@@ -1,0 +1,9 @@
+restart
+add_force {/counterA_top/CLK100MHZ} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/counterA_top/sw[1]} -radix hex {0 0ns}
+add_force {/counterA_top/sw[0]} -radix hex {1 0ns}
+run 200ns
+add_force {/counterA_top/sw[0]} -radix hex {0 0ns}
+run 200ns
+add_force {/counterA_top/sw[1]} -radix hex {1 0ns}
+run 100000ns

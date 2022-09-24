@@ -25,8 +25,27 @@ module counterA_top(
     output wire [15:0] LED
 );
 
+// Declare a slower clock signal
+wire clk_slow;
+reg [15:0] clk_div;
+
+// Initial block
+initial begin
+    clk_div <= 16'd0;
+end
+
+// Clock divider
+// Divide clock frequency by 2^16
+// 100MHz / 2^16 = 1525.87
+always@(posedge CLK100MHZ)
+begin
+    clk_div <= clk_div + 1;
+end
+
+assign clk_slow = clk_div[15];
+
 counterA instanceA(
-    .clk(CLK100MHZ),
+    .clk(clk_slow),
     .rst(sw[0]),
     .en(sw[1]),
     .cnt(LED)

@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "left_vhdl_behav" "xil_defaultlib.left_vhdl" -log "elaborate.log" 

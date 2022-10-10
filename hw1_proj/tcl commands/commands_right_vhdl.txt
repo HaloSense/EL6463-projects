@@ -1,0 +1,36 @@
+restart
+add_force {/right_vhdl/I} -radix bin {1101010010000011 0ns}
+add_force {/right_vhdl/C} -radix hex {0 0ns}
+run 100ns
+add_force {/right_vhdl/C} -radix hex {1 0ns}
+run 100ns
+add_force {/right_vhdl/C} -radix hex {2 0ns}
+run 100ns
+add_force {/right_vhdl/C} -radix hex {3 0ns}
+run 100ns
+add_force {/right_vhdl/C} -radix hex {4 0ns}
+run 100ns
+add_force {/right_vhdl/C} -radix hex {5 0ns}
+run 100ns
+add_force {/right_vhdl/C} -radix hex {6 0ns}
+run 100ns
+add_force {/right_vhdl/C} -radix hex {7 0ns}
+run 100ns
+add_force {/right_vhdl/C} -radix hex {8 0ns}
+run 100ns
+add_force {/right_vhdl/C} -radix hex {9 0ns}
+run 100ns
+add_force {/right_vhdl/C} -radix hex {A 0ns}
+run 100ns
+add_force {/right_vhdl/C} -radix hex {B 0ns}
+run 100ns
+add_force {/right_vhdl/C} -radix hex {C 0ns}
+run 100ns
+add_force {/right_vhdl/C} -radix hex {D 0ns}
+run 100ns
+add_force {/right_vhdl/C} -radix hex {E 0ns}
+run 100ns
+add_force {/right_vhdl/C} -radix hex {F 0ns}
+run 100ns
+add_force {/right_vhdl/C} -radix hex {0 0ns}
+run 100ns

@@ -29,3 +29,9 @@
 # FPGA Constraints files
 !*.xdc
 
+# CSV files to store test cases for testbenches
+!*.csv
+
+# Python scripts for miscellaneous uses
+!*.py
+

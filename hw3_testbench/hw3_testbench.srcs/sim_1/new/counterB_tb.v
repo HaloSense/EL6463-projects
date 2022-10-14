@@ -56,10 +56,11 @@ module counterB_tb();
             t_rst = f_rst;
             t_en = f_en;
             
-            #10;
             t_clk = 1;
             #10;
             t_clk = 0;
+            #10;
+            
             
             if (t_cnt != f_cnt) begin
                 $display("Output is incorrect at time %t", $time);

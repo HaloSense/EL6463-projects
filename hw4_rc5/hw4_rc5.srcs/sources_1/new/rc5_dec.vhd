@@ -153,14 +153,14 @@ begin
 
     -- a_reg
     PROCESS(rst, clk) BEGIN
-        IF(rst = '1' or i_cnt = "0001") THEN a_reg <= din(63 DOWNTO 32);
+        IF(rst = '1' or i_cnt = "1100") THEN a_reg <= din(63 DOWNTO 32);
         ELSIF(clk'EVENT AND clk ='1') THEN a_reg <= a;
         END IF;
     END PROCESS;
 
     -- b_reg
     PROCESS(rst, clk)  BEGIN
-        IF(rst = '1' or i_cnt = "0001") THEN b_reg<=din(31 DOWNTO 0);
+        IF(rst = '1' or i_cnt = "1100") THEN b_reg<=din(31 DOWNTO 0);
         ELSIF(clk'EVENT AND clk='1') THEN b_reg<=b;
         END IF;
     END PROCESS;   
@@ -169,14 +169,14 @@ begin
     PROCESS(rst, clk)  
     BEGIN
         IF(rst = '1') THEN 
-            i_cnt <= "0001";
+            i_cnt <= "1100";
             out_vld <= '0';
         ELSIF(clk'EVENT AND clk='1') THEN
-            IF(i_cnt="1100") THEN
-                i_cnt <= "0001";
+            IF(i_cnt="0001") THEN
+                i_cnt <= "1100";
                 out_vld <= '1';
             ELSE
-                i_cnt <= i_cnt+'1';
+                i_cnt <= i_cnt-'1';
                 out_vld <= '0';
        END IF;
     END IF;
